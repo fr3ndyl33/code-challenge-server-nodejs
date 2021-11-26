@@ -1,7 +1,7 @@
-var express = require('express');
-var router = express.Router();
-var createError = require('http-errors');
-var fs = require('fs');
+const express = require('express');
+const router = express.Router();
+const createError = require('http-errors');
+const fs = require('fs');
 const productsJsonLocation = './data/products.json';
 
 router.get('/', function (req, res, next) {

@@ -1,9 +1,9 @@
-var express = require('express');
-var fetch = require('node-fetch');
-var router = express.Router();
-var createError = require('http-errors');
+const express = require('express');
+const fetch = require('node-fetch');
+const router = express.Router();
+const createError = require('http-errors');
 const config = require('../config');
-var fs = require('fs');
+const fs = require('fs');
 const productsJsonLocation = './data/products.json';
 
 router.get('/', function(req, res, next) {
